@@ -2,6 +2,10 @@ import org.code.neighborhood.*;
 
 public class FlowerPainter extends PainterPlus{
 
+
+   /*
+  *moves the flower painter to the stem to start the petals
+  */
   public void moveToStem(){
     turnRight();
     for(int i = 0; i < 7; i++){
@@ -14,6 +18,10 @@ public class FlowerPainter extends PainterPlus{
     turnLeft();
   }
 
+
+   /*
+  *uses the flower painter to paint the actual flower
+  */
   public void paintFlower(String color){
     setPaint(50);
     turnLeft();
@@ -135,6 +143,9 @@ public class FlowerPainter extends PainterPlus{
     turnRight();   
 }
 
+   /*
+  *moves flower painter to the center of the flower to make the pollen center
+  */
   public void makeCenter(String color){
     for(int i = 0; i < 3; i++){
       move();
